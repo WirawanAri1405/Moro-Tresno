@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moro Tresno</title>
+  <link rel="stylesheet" href="src/output.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="dark:bg-slate-800 dark:text-slate-100">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-green-500 shadow-md dark:bg-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        
+        <!-- Logo -->
+        <div class="flex md:flex-1 text-2xl font-bold text-white">
+          Moro Tresno
+        </div>
+
+        <!-- Menu desktop -->
+        <div class="hidden md:flex  space-x-8">
+          <a href="#home" class="text-white hover:text-green-200 dark:text-white">Home</a>
+          <a href="#about" class="text-white hover:text-green-200 dark:text-white">About</a>
+          <a href="#services" class="text-white hover:text-green-200 dark:text-white">Menu</a>
+          <a href="#contact" class="text-white hover:text-green-200 dark:text-white">Location</a>
+        </div>
+
+       
+      <div class="hidden md:flex md:flex-1 md:justify-end">
+          <span class="mr-2 text-sm text-white">light</span>
+          <input type="checkbox" id="darkDesktop" class="hidden dark-toggle" />
+          <label for="darkDesktop">
+        <div
+          class="flex w-9 h-5 p-1 bg-slate-500 rounded-full cursor-pointer items-center">
+          <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+        </div>
+          </label>
+        <span class="ml-2 text-sm text-white">dark</span>
+      </div>
+
+        <!-- Hamburger -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-white focus:outline-none">
+            <!-- icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pt-2 pb-3 space-y-2 shadow dark:bg-slate-800">
+          <a href="#home" class="block  hover:text-green-500 dark:text-white">Home</a>
+          <a href="#about" class="block  hover:text-green-500 dark:text-white">About</a>
+          <a href="#services" class="block t hover:text-green-500 dark:text-white">Menu</a>
+          <a href="#contact" class="block  hover:text-green-500 dark:text-white">Location</a>
+         <div class="flex flex-1 ">
+          <span class="mr-2 text-sm ">light</span>
+          <input type="checkbox" id="darkMobile" class="hidden dark-toggle" />
+          <label for="darkMobile">
+        <div
+          class="flex w-9 h-5 p-1 bg-slate-500 rounded-full cursor-pointer items-center">
+          <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+        </div>
+          </label>
+        <span class="ml-2 text-sm ">dark</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex items-center justify-center bg-gradient-to-t from-green-200 to-green-400 text-white">
+    <div class="max-w-2xl text-center px-4">
+      <h1 class="text-4xl sm:text-6xl font-bold mb-4">Seporsi Hangat, Rasa yang Mengikat</h1>
+      <p class="text-lg sm:text-xl mb-6">Warung Mie Ayam & Bakso kami menyajikan cita rasa khas dengan bahan segar pilihan, kuah gurih, dan kehangatan yang selalu bikin rindu.</p>
+      <a href="#services" class="px-6 py-3 bg-white text-green-600 font-semibold rounded-lg shadow hover:bg-gray-100">
+        Pesan Sekarang
+      </a>
+    </div>
+  </section>
+
+
+  <section id="about" class="scroll-mt-20">
+   <h2 class="text-3xl mt-5 font-bold text-center">About</h2>
+   <div class="max-w-lg m-5 mx-auto">
+      <p class="text-lg text-justify">
+        Warung Mie Ayam & Bakso kami hadir dengan cita rasa yang hangat, seperti kebersamaan di meja makan keluarga. <br>
+        Kami percaya bahwa seporsi mie ayam dan bakso bukan hanya makanan, tetapi juga cara sederhana untuk menghadirkan kebahagiaan. <br>
+        Dengan bahan pilihan yang segar, racikan bumbu khas, dan kuah yang gurih, setiap mangkuk disajikan dengan penuh ketulusan. <br>
+        Bagi kami, pelanggan bukan sekadar tamu, melainkan bagian dari keluarga besar yang selalu kami layani dengan sepenuh hati.
+      </p>
+   </div>
+  </section>
+  <section id="services" class="scroll-mt-20">
+    <h2 class="text-3xl font-bold text-center ">Menu</h2>
+    <div class="grid grid-cols-2 mt-16 p-2 gap-2 md:grid-cols-3 md:p-4 md:gap-4 ">
+      <div class="max-w-sm bg-white rounded-2xl shadow-lg border-slate-100 border-2  hover:shadow-xl hover:scale-95 group transition duration-500 ease-out">
+        <!-- Gambar -->
+         <div class="flex justify-center group-hover:scale-110 group-hover:rotate-12 duration-500">
+          <img class=" w-48 h-48 object-cover rounded-full " src="/img/mie ayam.png" alt="mie ayam">
+         </div>
+        <!-- Konten -->
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-green-700">Mie Ayam</h3>
+          <p class="text-gray-600 text-sm mt-1">Mie lembut dengan ayam berbumbu khas, disajikan bersama kuah gurih hangat.</p>
+          <!-- Harga -->
+           <button class="mt-4 bg-green-500 text-white px-4 font-semibold py-2 rounded-lg hover:bg-green-600 transition">
+            Rp15.000
+          </button>
+  </div>
+</div>
+ <div class="max-w-sm bg-white rounded-2xl shadow-lg border-slate-100 border-2  hover:shadow-xl hover:scale-95 group transition duration-500 ease-out">
+        <!-- Gambar -->
+         <div class="flex justify-center group-hover:scale-110 group-hover:rotate-12 duration-500">
+          <img class=" w-48 h-48 object-cover rounded-full " src="/img/mie ayam bakso.png" alt="Mie Ayam Bakso">
+         </div>
+        <!-- Konten -->
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-green-700">Mie Ayam Bakso</h3>
+          <p class="text-gray-600 text-sm mt-1">Perpaduan mie kenyal, potongan ayam berbumbu, dan bakso sapi dalam kuah hangat.</p>
+          <!-- Harga -->
+           <button class="mt-4 bg-green-500 text-white px-4 font-semibold py-2 rounded-lg hover:bg-green-600 transition">
+            Rp15.000
+          </button>
+  </div>
+</div>
+ <div class="max-w-sm bg-white rounded-2xl shadow-lg border-slate-100 border-2  hover:shadow-xl hover:scale-95 group transition duration-500 ease-out">
+        <!-- Gambar -->
+         <div class="flex justify-center group-hover:scale-110 group-hover:rotate-12 duration-500">
+          <img class=" w-48 h-48 object-cover rounded-full " src="/img/mie ayam ijo.png" alt="mie ayam ijo">
+         </div>
+        <!-- Konten -->
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-green-700">Mie Ayam Ijo</h3>
+          <p class="text-gray-600 text-sm mt-1">Mie hijau lembut dengan ayam berbumbu khas, disajikan bersama kuah gurih hangat.</p>
+          <!-- Harga -->
+           <button class="mt-4 bg-green-500 text-white px-4 font-semibold py-2 rounded-lg hover:bg-green-600 transition">
+            Rp15.000
+          </button>
+  </div>
+</div>
+ <div class="max-w-sm bg-white rounded-2xl shadow-lg  border-slate-100 border-2 hover:shadow-xl hover:scale-95 group transition duration-500 ease-out">
+        <!-- Gambar -->
+         <div class="flex justify-center group-hover:scale-110 group-hover:rotate-12 duration-500">
+          <img class=" w-48 h-48 object-cover rounded-full " src="/img/mie ayam ijo bakso.png" alt="mie Ayam ijo bakso">
+         </div>
+        <!-- Konten -->
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-green-700">Mie Ayam Ijo Bakso</h3>
+          <p class="text-gray-600 text-sm mt-1">Perpaduan mie hijau kenyal, potongan ayam berbumbu, dan bakso sapi dalam kuah hangat.</p>
+          <!-- Harga -->
+           <button class="mt-4 bg-green-500 text-white px-4 font-semibold py-2 rounded-lg hover:bg-green-600 transition">
+            Rp15.000
+          </button>
+  </div>
+</div>
+ <div class="max-w-sm bg-white rounded-2xl shadow-lg  border-slate-100 border-2 hover:shadow-xl hover:scale-95 group transition duration-500 ease-out">
+        <!-- Gambar -->
+         <div class="flex justify-center group-hover:scale-110 group-hover:rotate-12 duration-500">
+          <img class=" w-48 h-48 object-cover rounded-full " src="/img/bakso.png" alt="bakso">
+         </div>
+        <!-- Konten -->
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-green-700">Bakso</h3>
+          <p class="text-gray-600 text-sm mt-1">Bakso sapi kenyal dengan kuah kaldu yang gurih.</p>
+          <!-- Harga -->
+           <button class="mt-4 bg-green-500 text-white px-4 font-semibold py-2 rounded-lg hover:bg-green-600 transition">
+            Rp15.000
+          </button>
+  </div>
+</div>
+ <div class="max-w-sm bg-white rounded-2xl shadow-lg  border-slate-100 border-2 hover:shadow-xl hover:scale-95 group transition duration-500 ease-out">
+        <!-- Gambar -->
+         <div class="flex justify-center group-hover:scale-110 group-hover:rotate-12 duration-500">
+          <img class=" w-48 h-48 object-cover rounded-full " src="/img/bakso tenis.png" alt="bakso tenis">
+         </div>
+        <!-- Konten -->
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-green-700">Bakso Tenis</h3>
+          <p class="text-gray-600 text-sm mt-1">Bakso sapi dengan isian telur ayam, nikmat dengan kuah kaldu gurih.</p>
+          <!-- Harga -->
+           <button class="mt-4 bg-green-500 text-white px-4 font-semibold py-2 rounded-lg hover:bg-green-600 transition">
+            Rp15.000
+          </button>
+  </div>
+</div>
+
+
+    </div>
+  </section>
+  <section id="contact" class="scroll-mt-20">
+    <h2 class="text-3xl mt-5 font-bold text-center">Lokasi Kami</h2>
+    <div class="max-w-lg m-5 mx-auto">
+      <p class="text-lg text-justify">
+        Jl. Pangeran Diponegoro No.3, Kasintuwu, Kec. Poso Kota Utara, Kabupaten Poso, Sulawesi Tengah 94612
+      </p>
+    </div>
+ <iframe class="m-8 mx-auto w-4/5 h-96 rounded-xl border-2 border-gray-100 overflow-hidden shadow-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.1626986548689!2d120.76078336947113!3d-1.3861329591997091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d8ee5002e372b1b%3A0x431c02c3b7e9af4e!2sMie%20Ayam%20Moro%20Tresno!5e0!3m2!1sid!2sid!4v1756027001578!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Column 1 -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Moro Tresno</h3>
+          <p class="text-sm">Warung Mie Ayam & Bakso kami menyajikan cita rasa khas dengan bahan segar pilihan, kuah gurih, dan kehangatan yang selalu bikin rindu.</p>
+        </div>
+        <!-- Column 2 -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#home" class="hover:text-white">Home</a></li>
+            <li><a href="#about" class="hover:text-white">About</a></li>
+            <li><a href="#services" class="hover:text-white">Services</a></li>
+            <li><a href="#contact" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Column 3 -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Contact</h3>
+          <p class="text-sm">Email: info@example.com</p>
+          <p class="text-sm mb-4">Phone: +62 812 3456 7890</p>
+
+          <!-- Social Media -->
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-white">
+              <!-- Facebook -->
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 12a10 10 0 10-11.6 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.4 3h-1.8v7A10 10 0 0022 12z"/>
+              </svg>
+            </a>
+            <a href="#" class="hover:text-white">
+              <!-- Instagram -->
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.8-2.8a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"/>
+              </svg>
+            </a>
+            <a href="#" class="hover:text-white">
+              <!-- Twitter/X -->
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 001.88-2.37 8.6 8.6 0 01-2.72 1.04 4.28 4.28 0 00-7.3 3.9A12.15 12.15 0 013 4.8a4.28 4.28 0 001.32 5.71c-.66-.02-1.28-.2-1.82-.5v.05a4.29 4.29 0 003.44 4.2c-.57.16-1.17.2-1.78.08a4.28 4.28 0 004 2.97A8.6 8.6 0 012 19.54 12.1 12.1 0 008.29 21c7.55 0 11.68-6.25 11.68-11.68 0-.18-.01-.35-.02-.53A8.36 8.36 0 0022.46 6z"/>
+              </svg>
+            </a>
+            <a href="#" class="hover:text-white">
+              <!-- GitHub -->
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M12 2a10 10 0 00-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34a2.64 2.64 0 00-1.1-1.46c-.9-.62.07-.61.07-.61a2.1 2.1 0 011.54 1.04 2.13 2.13 0 002.92.83 2.13 2.13 0 01.63-1.34c-2.22-.25-4.56-1.11-4.56-4.92a3.85 3.85 0 011.03-2.67 3.58 3.58 0 01.1-2.64s.84-.27 2.75 1.02a9.54 9.54 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02a3.58 3.58 0 01.1 2.64 3.85 3.85 0 011.03 2.67c0 3.82-2.34 4.67-4.57 4.92a2.38 2.38 0 01.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0012 2z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-gray-700 pt-4 text-center text-sm">
+        © 2025 MyWebsite. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // toggle mobile menu
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggles = document.querySelectorAll(".dark-toggle");
+        const html = document.documentElement;
+
+        toggles.forEach(toggle => {
+    toggle.addEventListener("click", function () {
+      if (toggle.checked) {
+        html.classList.add("dark");
+      } else {
+        html.classList.remove("dark");
+      }
+
+      // sinkronkan semua toggle (desktop & mobile)
+      toggles.forEach(t => t.checked = toggle.checked);
+    });
+    });
+      });
+  </script>
+</body>
+</html>
