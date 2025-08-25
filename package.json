@@ -1,7 +1,6 @@
 {
   "name": "moro-tresno",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,5 +11,14 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.12",
     "tailwindcss": "^4.1.12"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WirawanAri1405/Moro-Tresno.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WirawanAri1405/Moro-Tresno/issues"
+  },
+  "homepage": "https://github.com/WirawanAri1405/Moro-Tresno#readme",
+  "description": ""
 }
