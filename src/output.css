@@ -232,8 +232,14 @@
   .m-8 {
     margin: calc(var(--spacing) * 8);
   }
+  .m-50 {
+    margin: calc(var(--spacing) * 50);
+  }
   .mx-20 {
     margin-inline: calc(var(--spacing) * 20);
+  }
+  .mx-40 {
+    margin-inline: calc(var(--spacing) * 40);
   }
   .mx-auto {
     margin-inline: auto;
